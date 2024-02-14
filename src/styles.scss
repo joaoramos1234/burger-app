@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+$primary-blue: #35b8be;
+$primary-white: #f5fbfc;
+$primary-coral: #ff8946;
+$typo-header: #191b22;
+$typo-p: #546285;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
