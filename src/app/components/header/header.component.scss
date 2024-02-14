@@ -1,0 +1,81 @@
+@import "../../../styles.scss";
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px 80px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 90%;
+  padding: 20px 3%;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+    .active {
+      color: $primary-blue;
+      font-weight: 400;
+
+      &:hover {
+        color: $primary-blue;
+      }
+    }
+    a {
+      padding: 20px 15px;
+      font-weight: 300;
+      cursor: pointer;
+      color: $typo-p;
+      transition: 0.5s;
+
+      &:hover {
+        color: $typo-header;
+        font-weight: 400;
+        transition: 0.5s;
+      }
+    }
+  }
+
+  .nav-button {
+    position: relative;
+    border-radius: 5px;
+    padding: 13px !important;
+    background: $primary-blue url("../../../assets/button-wave.svg") left
+      no-repeat;
+    width: 55px;
+    height: 55px;
+    .shopping-cart {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .shop-quantity {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 !important;
+      height: 25px;
+      min-width: 25px;
+      border-radius: 50%;
+      background-color: white;
+      color: $primary-blue;
+      box-shadow: 7px 7px 25px 0 rgba(126, 130, 143, 0.27);
+      font-weight: 600;
+      font-size: 13px;
+    }
+  }
+}
