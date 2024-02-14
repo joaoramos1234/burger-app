@@ -1,0 +1,12 @@
+@import "../../../styles.scss";
+
+p {
+  background: $primary-blue url("../../../assets/banner-wave.svg") center;
+  color: $primary-white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 15px 48px;
+  font-weight: 300;
+  font-size: 15px;
+}
