@@ -1,13 +1,30 @@
-import { NgOptimizedImage } from '@angular/common';
-import { Component } from '@angular/core';
+import {
+  CommonModule,
+  NgOptimizedImage,
+  isPlatformBrowser,
+} from '@angular/common';
+import { Component, HostListener, Inject, PLATFORM_ID } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgOptimizedImage],
+  imports: [CommonModule, NgOptimizedImage],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss',
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  Logo: any;
+  pageWidth!: number;
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+    if (isPlatformBrowser(this.platformId)) {
+      this.pageWidth = window.innerWidth;
+    }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    if (isPlatformBrowser(this.platformId)) {
+      this.pageWidth = window.innerWidth;
+    }
+  }
 }

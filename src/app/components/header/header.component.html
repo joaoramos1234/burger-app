@@ -1,16 +1,50 @@
 <header>
-  <nav>
-    <div class="logo">
-      <img ngSrc="./assets/Logo.svg" width="40" height="51" priority />
-    </div>
-    <div class="nav-links">
-      <ul>
-        <a class="active">Home</a>
-        <a>Order</a>
-        <a>Company</a>
-        <a>FAQ</a>
-        <a>Contact</a>
-        <a class="nav-button">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"
+        ><img ngSrc="./assets/Logo.svg" width="40" height="51" priority
+      /></a>
+      <button
+        class="navbar-toggler ms-auto me-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a *ngIf="pageWidth <= 992" class="nav-button nav-link">
+        <img
+          class="shopping-cart"
+          ngSrc="./assets/shopping-cart.svg"
+          width="18"
+          height="18"
+          priority
+        />
+        <div class="shop-quantity">0</div>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Company</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item"></li>
+        </ul>
+        <a *ngIf="pageWidth > 992" class="nav-button nav-link">
           <img
             class="shopping-cart"
             ngSrc="./assets/shopping-cart.svg"
@@ -20,7 +54,7 @@
           />
           <div class="shop-quantity">0</div>
         </a>
-      </ul>
+      </div>
     </div>
   </nav>
 </header>
