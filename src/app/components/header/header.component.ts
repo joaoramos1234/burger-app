@@ -14,6 +14,7 @@ import { Component, HostListener, Inject, PLATFORM_ID } from '@angular/core';
 })
 export class HeaderComponent {
   pageWidth!: number;
+  isCollapsed: boolean = false;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
     if (isPlatformBrowser(this.platformId)) {
@@ -26,5 +27,9 @@ export class HeaderComponent {
     if (isPlatformBrowser(this.platformId)) {
       this.pageWidth = window.innerWidth;
     }
+  }
+
+  toggleCollapse() {
+    this.isCollapsed = !this.isCollapsed;
   }
 }

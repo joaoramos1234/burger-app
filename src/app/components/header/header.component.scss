@@ -43,11 +43,23 @@ nav {
     padding: 13px;
     border-radius: 5px;
 
+    &:focus,
+    &:active {
+      outline: none !important; // Remove outline
+      border: none !important; // Remove border
+      box-shadow: none;
+    }
+
     .navbar-toggler-icon {
       background-image: url("../../../assets/bar.png");
       max-width: 15px;
       max-height: 15px;
       padding: 13px;
+    }
+
+    .navbar-toggler-icon.collapsed {
+      background-image: url("../../../assets/close.png");
+      padding: 10px;
     }
   }
   .nav-button {
