@@ -12,3 +12,14 @@ $typo-p: #546285;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+body {
+  overflow-x: hidden;
+}
+
+.max-width-default {
+  max-width: 1200px;
+}
+
+.pad-48 {
+  padding: 48px;
+}

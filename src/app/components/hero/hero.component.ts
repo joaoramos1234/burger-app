@@ -1,10 +1,10 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
-import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [HomeComponent],
+  imports: [NgOptimizedImage],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })
