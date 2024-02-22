@@ -4,12 +4,16 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: white;
 }
 
 nav {
+  display: block;
   width: 100%;
-  padding: 20px 6%;
-
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0px auto;
+  background-color: white !important;
   ul {
     .active {
       color: $primary-blue;
@@ -45,8 +49,8 @@ nav {
 
     &:focus,
     &:active {
-      outline: none !important; // Remove outline
-      border: none !important; // Remove border
+      outline: none !important;
+      border: none !important;
       box-shadow: none;
     }
 
@@ -99,5 +103,11 @@ nav {
 @media all and (min-width: 1000px) {
   .nav-button {
     position: absolute;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  nav {
+    padding: 20px 5%;
   }
 }
