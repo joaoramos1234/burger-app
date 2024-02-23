@@ -82,3 +82,47 @@
     }
   }
 }
+
+@media all and (max-width: 1050px) {
+  .hero-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+
+    .hero-div {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+      width: 100%;
+
+      .hero-text {
+        width: 100%;
+        max-width: 730px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .hero-place-order-button {
+      display: block;
+      margin: auto;
+    }
+
+    .hero-image {
+      width: 100% !important;
+      max-width: 730px;
+      padding: 0 !important;
+
+      margin-top: 60px;
+      img {
+        max-width: 100%;
+        height: auto;
+        padding-left: 20px;
+      }
+    }
+  }
+}

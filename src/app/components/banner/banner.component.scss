@@ -16,3 +16,15 @@ p {
     font-weight: 500;
   }
 }
+
+@media all and (max-width: 560px) {
+  p {
+    padding: 15px 10px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  p {
+    display: none;
+  }
+}
