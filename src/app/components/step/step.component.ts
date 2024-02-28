@@ -1,12 +1,11 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-step',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './step.component.html',
-  styleUrl: './step.component.scss'
+  styleUrl: './step.component.scss',
 })
-export class StepComponent {
-
-}
+export class StepComponent {}

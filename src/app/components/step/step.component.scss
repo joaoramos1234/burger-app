@@ -1,0 +1,71 @@
+@import "../../../styles.scss";
+
+.step-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 100px 3% 140px;
+
+  .step-h1 {
+    font-size: 55px;
+    font-weight: 700;
+    color: $primary-blue;
+    margin: 40px 0px;
+  }
+
+  .step-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .step {
+      max-width: 33%;
+      text-align: center;
+
+      .step-h5 {
+        color: $typo-header;
+        font-weight: 700;
+      }
+
+      .step-p {
+        max-width: 75%;
+        display: block;
+        margin: 10px auto;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 992px) {
+  .step-section {
+    .step-h1 {
+      margin-bottom: 60px;
+    }
+
+    .step-content-wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      .step {
+        max-width: 75%;
+        text-align: center;
+
+        .step-h5 {
+          color: $typo-header;
+          font-weight: 700;
+        }
+
+        .step-p {
+          max-width: 85%;
+          display: block;
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+}
