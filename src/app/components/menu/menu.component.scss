@@ -1,0 +1,155 @@
+@import "../../../styles.scss";
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../assets/menu-shape.svg");
+  width: 100%;
+  padding: 100px 3% 140px;
+
+  .menu-h1 {
+    font-size: 55px;
+    font-weight: 700;
+    color: $primary-blue;
+    margin: 20px 0px;
+  }
+
+  .menu-p {
+    font-size: 18px;
+    font-weight: 400;
+    color: $typo-p;
+    margin-bottom: 80px;
+    max-width: 33%;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+
+    .menu-span {
+      color: $primary-blue;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  .menu-button-div {
+    margin-bottom: 60px;
+
+    .menu-button-css,
+    .menu-button-clear {
+      margin: auto 20px;
+    }
+  }
+
+  .menu-button-clear {
+    border: 1px solid rgba(97, 114, 131, 0.2);
+    border-radius: 6px;
+    background-color: transparent;
+    max-width: fit-content;
+    max-height: 60px;
+    padding: 16px 36px;
+    cursor: pointer;
+    color: $typo-header;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .menu-button-css {
+    border: 1px solid $primary-blue;
+    border-radius: 6px;
+    background-color: $primary-blue;
+    background-image: url("../../../assets/button-wave.svg");
+    background-position: 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: fit-content;
+    max-height: 60px;
+    padding: 16px 36px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .menu-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+
+    .menu-item {
+      display: flex;
+      flex-direction: row;
+      max-width: 580px;
+      max-height: 200px;
+      padding: 20px;
+      gap: 30px;
+      border-radius: 6px;
+      border: 1px solid rgba(97, 114, 131, 0.2);
+
+      .menu-item-img img {
+        border-radius: 10px;
+      }
+    }
+
+    .menu-item-content {
+      .menu-item-content-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        h4 {
+          font-size: 22px;
+          font-weight: 800;
+          color: $typo-header;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          color: $primary-blue;
+        }
+      }
+
+      .menu-item-content-main {
+        p {
+          font-size: 16px;
+          color: $typo-p;
+        }
+      }
+
+      .menu-item-content-footer {
+        input[type="number"] {
+          max-width: 60px;
+          height: 45px;
+          text-align: center;
+          margin-right: 10px;
+          border-color: rgba(97, 114, 131, 0.2);
+          outline: none;
+        }
+
+        input[type="button"] {
+          border: 1px solid $primary-blue;
+          border-radius: 6px;
+          background-color: $primary-blue;
+          max-height: 45px;
+          padding: 9px 15px;
+          cursor: pointer;
+          color: white;
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
