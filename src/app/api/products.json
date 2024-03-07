@@ -1,0 +1,92 @@
+{
+  "burgers": {
+    "1": {
+      "name": "Burger Dreams",
+      "price": 9.2,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photoUrl": "../../../assets/Burger-03.png"
+    },
+    "2": {
+      "name": "Burger Waldo",
+      "price": 10,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photoUrl": "../../../assets/Burger-08.png"
+    },
+    "3": {
+      "name": "Burger Cali",
+      "price": 8,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photoUrl": "../../../assets/Burger-04.png"
+    },
+    "4": {
+      "name": "Burger Bacon Buddy",
+      "price": 10,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photoUrl": "../../../assets/Burger-06.png"
+    },
+    "5": {
+      "name": "Burger Spicy",
+      "price": 10,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photoUrl": "../../../assets/Burger-02.png"
+    },
+    "6": {
+      "name": "Burger Classic",
+      "price": 10,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photoUrl": "../../../assets/Burger-01.png"
+    }
+  },
+  "sides": {
+    "1": {
+      "name": "Salad Ceaser",
+      "price": 6,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photoUrl": "../../../assets/Side-06.png"
+    },
+    "2": {
+      "name": "Beans Slow Cooked",
+      "price": 4,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photoUrl": "../../../assets/Side-05.png"
+    },
+    "3": {
+      "name": "Fries Cheese",
+      "price": 6,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photoUrl": "../../../assets/Side-02.png"
+    },
+    "4": {
+      "name": "Fries Rustic",
+      "price": 6,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photoUrl": "../../../assets/Side-03.png"
+    }
+  },
+  "drinks": {
+    "1": {
+      "name": "Drink Fig & Lime",
+      "price": 4,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photoUrl": "../../../assets/Drink-01.png"
+    },
+    "2": {
+      "name": "Drink Liquor",
+      "price": 7,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photoUrl": "../../../assets/Drink-02.png"
+    },
+    "3": {
+      "name": "Drink Lime",
+      "price": 4,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photoUrl": "../../../assets/Drink-04.png"
+    },
+    "4": {
+      "name": "Drink Cola",
+      "price": 3,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photoUrl": "../../../assets/Drink-03.png"
+    }
+  }
+}
