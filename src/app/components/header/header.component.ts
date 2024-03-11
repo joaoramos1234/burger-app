@@ -1,14 +1,16 @@
+import { Component, HostListener, Inject, PLATFORM_ID } from '@angular/core';
 import {
   CommonModule,
   NgOptimizedImage,
   isPlatformBrowser,
 } from '@angular/common';
-import { Component, HostListener, Inject, PLATFORM_ID } from '@angular/core';
+import { Router } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, NgOptimizedImage],
+  imports: [CommonModule, NgOptimizedImage, RouterModule],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
@@ -16,7 +18,10 @@ export class HeaderComponent {
   pageWidth!: number;
   isCollapsed: boolean = false;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private router: Router
+  ) {
     if (isPlatformBrowser(this.platformId)) {
       this.pageWidth = window.innerWidth;
     }
